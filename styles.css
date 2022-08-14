@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*creating variables with :root*/
+:root {
+--pale-blue: hsl(225, 100%, 94%);
+--bright-blue: hsl(245, 75%, 52%);
+--very-pale-blue: hsl(225, 100%, 98%);
+--desaturated-blue: hsl(224, 23%, 55%);
+--dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+    background-color: var(--pale-blue);
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 1rem;
+}
+.card {
+    width: 450px;
+    background-color: white;
+    color: var(--desaturated-blue);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 50px auto;
+}
+
+.title {
+    font-weight: 900;
+    font-size: 2rem;
+    color: var(--dark-blue);
+}
+
+.hero-image {
+    width: 450px;
+    height: 220px;
+}
+
+.container {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+}
+.container > * {
+    margin: 13px 0;
+}
+
+.description {
+    line-height: 1.5;
+}
+
+button {
+    width: 100%;
+    border: none;
+    font-size: 0.9rem;
+    font-weight: 700;
+    border-radius: 1rem;
+}
+.proceed {
+    background-color: var(--bright-blue);
+    color: white;
+    padding: 1rem 0;
+    box-shadow: 0 20px 30px -8px rgb(197, 189, 245);
+}
+
+.proceed:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.proceed:active{
+    background-color: white;
+    color: var(--dark-blue);
+}
+
+.cancel {
+    color: grey;
+    background-color: white;
+    margin-top: 22px;   
+}
+
+.cancel:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.cancel:active {
+    opacity: 0.5;
+}
+
+.payment-plan {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1rem;
+    background-color: var(--very-pale-blue);
+    align-items: center;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+}
+
+.payment-plan strong {
+    color: var(--dark-blue);
+}
+
+.payment-description {
+    line-height: 20px;
+    margin-right: 75px;
+}
+
+.payment-plan a {
+    color: var(--bright-blue);
+    font-size: 13px;
+    font-weight: 700;
+}
+a:hover {
+    text-decoration: none;
+    opacity: 0.8;
+}
